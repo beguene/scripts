@@ -96,3 +96,4 @@ function wiki () { echo $1;/usr/bin/dig +short txt $1.wp.dg.cx;}
 
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'$*'*' -ls ; }
+function fd() { find . -type d -iname '*'$*'*' -ls ; }
