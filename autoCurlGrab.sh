@@ -7,7 +7,7 @@ else
   echo "First command-line argument is $1."
     FILE=$1;
 fi
-cd ~/Downloads/q;
+cd ~/Downloads;
 for i in $( cat $FILE ); do
     curl -O -f -C - --connect-timeout 10 "$i" && sed -i -e "1d" "$FILE";
 done
